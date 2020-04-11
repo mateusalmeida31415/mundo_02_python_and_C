@@ -41,5 +41,6 @@ def resultadoFinal(minhasTentativas, numeroGerado):
     print(f"Número de tentativas: {minhasTentativas}")
     linha()
 
+
 titulo()
 tentativas(usuario(), maquinaEscolha())
