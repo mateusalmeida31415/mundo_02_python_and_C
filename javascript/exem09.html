@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 18pt arial;
+        }
+        strong{
+            text-transform: uppercase;
+        }
+        input#cx1{
+            width: 50px;
+        }
+        span{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="cx1" id="cx1"><span>km/h</span>
+    <input type="button" value="Verificar" id="btn">
+    <div id="res"></div>
+    <script>
+        var caixa = document.querySelector('input#cx1')
+        var botao = document.querySelector('input#btn')
+        var result = document.querySelector('div#res')
+
+        botao.addEventListener('click', clicar) 
+        function clicar(){
+            var vel = Number(caixa.value)
+            result.innerHTML = `<p> Sua Velocidade atual é <strong>${vel}</strong> Km/h</p>`
+            if(vel >= 60){
+                result.innerHTML += `<p> Você está acima da velocidade permitida. <strong>multado!</strong>`
+            }
+            result.innerHTML += `<p>Sempre use o cinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>

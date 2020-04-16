@@ -1,0 +1,40 @@
+body{
+    background: lightblue;
+    font: normal 20pt arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header{
+    
+}
+
+section{
+    background: white;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px rgba(128, 128, 128, 0.4);
+    color: black;
+}
+
+section img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+div{
+    margin: 5px;
+}
+
+footer{
+
+}

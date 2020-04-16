@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src="apagada.jpg" alt="apagada" id="foto"><br>
+    <input type="button" value="Acende" id="bton">
+    <input type="button" value="Apaga" id="btoff">
+    <script>
+        var foto = document.querySelector('img#foto')
+        var botaoAcende = document.querySelector('input#bton')
+        var botaoApaga = document.querySelector('input#btoff')
+        botaoAcende.addEventListener('click', acende)
+        botaoApaga.addEventListener('click', apaga)
+
+        function acende(){
+            foto.src = 'acesa.jpg'
+        }
+
+        function apaga(){
+            foto.src = 'apagada.jpg'
+        }
+
+    </script>
+</body>
+</html>

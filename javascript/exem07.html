@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            background: green;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            color: white;
+            font: bold 20pt arial;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id = "teste">
+        Teste
+    </div>
+    <script>
+        var a = window.document.getElementById('teste')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerText = 'Cliquei !'
+            a.style.background = 'red'
+        }
+
+        function entrar(){
+            a.innerText = 'Entrei !'
+        }
+
+        function sair(){
+            a.innerText = 'Sai !'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="texto">Este é o texto que vou esconder.</p>
+    <input type="button" value="Clique" id="btn">
+    <script>
+        var p1 = document.querySelector('p#texto')
+        var botao = document.querySelector('input#btn')
+        var botao = document.addEventListener('click', clicar)
+
+        function clicar(){
+            p1.style.display ='none'
+        }
+    </script>
+</body>
+</html>
